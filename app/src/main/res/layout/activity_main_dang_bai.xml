@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainDangBai">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Bài"
+        android:id="@+id/tvdangbai"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="30dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtdbtentr"
+        android:hint="Tên Truyện"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtdbnoidung"
+        android:hint="Nội Dung"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtha"
+        android:hint="Linkanh"/>
+    <Button
+        android:id="@+id/choose_image_btn"
+        android:text="Choose Image"
+        android:textColor="#000"
+        android:background="@drawable/bg_edt"
+        app:backgroundTint="#FDE6E6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"/>
+    <ImageView
+        android:id="@+id/image_view"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="400dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:background="@drawable/bg_edt"
+            app:backgroundTint="#FDE6E6"
+            android:textColor="#2196F3"
+            android:id="@+id/btnsave"/>
+
+        <Button
+            android:layout_marginLeft="100dp"
+            android:id="@+id/btncancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2196F3"
+            android:background="@drawable/bg_edt"
+            app:backgroundTint="#FDE6E6"
+            android:text="Canncel" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

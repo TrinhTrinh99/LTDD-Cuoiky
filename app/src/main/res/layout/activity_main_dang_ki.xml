@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainDangKi"
+    android:gravity="center"
+    android:background="@drawable/dangki"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="Đăng Kí"
+        android:gravity="center_vertical"
+        android:textSize="60dp"
+        android:paddingLeft="70dp"
+        android:textStyle="italic"
+        android:layout_marginBottom="80dp"
+        android:textColor="#D683E4"
+        />
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="Tên đăng nhập"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#3F51B5"
+            android:id="@+id/dktaikhoan"
+
+
+            />
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật Khẩu"
+            android:textColorHint="#3F51B5"
+            android:id="@+id/dkmatkhau"
+            android:ems="15"
+           />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="Email"
+            android:textColorHint="#3F51B5"
+            android:id="@+id/dkemail"
+            android:layout_marginBottom="15dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_edt"
+            android:backgroundTint="#DDF2D9F4"
+            android:ems="17"
+            android:text="Đăng Kí"
+            android:textColor="#3F51B5"
+            android:textSize="15dp"
+            app:backgroundTint="#FDE6E6"
+            android:id="@+id/dkdangki"
+
+            />
+        <Button
+            android:id="@+id/dkdangnhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edt"
+            android:backgroundTint="#DDF2D9F4"
+            android:ems="17"
+            android:text="Trở về Đăng Nhập"
+            android:textColor="#3F51B5"
+            android:textSize="15dp"
+            app:backgroundTint="#FDE6E6" />
+</LinearLayout>
+
+
+
+
